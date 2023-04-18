@@ -15,8 +15,8 @@ class TradeBot:
         self.amount = 0.0033
         self.mode='buy'
         self.socket = "wss://stream.binance.com:9443/ws/" + 'btcusdt' + "@kline_1m"
-        self.API_KEY = 'gR0FLVP4exAt7Tf54gfWG3E6iPGvwSazf8UsaRocCtUyNY176BmLkDKuncq7XX5W'
-        self.SECRET_KEY = 'OBItjPQ16JNcqT0QpqReQXWRZZVs6Bot8cUePDyigmLe3oT5GkicLah4kIWSbV5k'
+        self.API_KEY = 'ACebgoy9pnpy0CzbI4xGdeUcVXUaRoO5u5PLKYnz1dp8f4bWlNhS1uhqzxx0Nc1f'
+        self.SECRET_KEY = 'VbeLJgHSMC8LVUNwFHRvff8UyFwMmjp90NWNXobKHrEfY2dcSxyY7cRDR0Po89g9'
         self.client = Client(self.API_KEY, self.SECRET_KEY, testnet=False)
         ws = websocket.WebSocketApp(self.socket, on_open=self.on_open, on_close=self.on_close,
                                     on_error=self.on_error, on_message=self.on_message)
